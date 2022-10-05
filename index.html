@@ -13,7 +13,7 @@
 
     <!-- add new Category  -->
     <div class="add-category d-flex align-items-center justify-content-center d-none">
-        <div class="box card">
+        <div class="add-box card">
             <div class="card-header">
                 <div class="d-flex align-items-center justify-content-between">
                     <h3 class="">Add New Category</h3>
@@ -30,6 +30,36 @@
                 <div class="d-flex align-items-center justify-content-end">
                     <span class="btn btn-sm btn-danger mx-3 close">Close</span>
                     <span class="btn btn-sm btn-primary add">Add</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- delete Category  -->
+    <div class="delete-category d-flex align-items-center justify-content-center d-none">
+        <div class="delete-box card">
+            <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h3 class="">Delete Category</h3>
+                    <a href="#"><i class="fa-solid fa-xmark close"></i></a>
+                </div>
+            </div>
+            <div class="card-body pb-5">
+                <form action="">
+                    <label for="delete_cat" class="d-block"><h5 class="">Category Name You Want Delte</h5></label>
+                    <select class="form-control" id="delete_cat">
+                        <option  disabled="disabled" selected="selected" value="Select Category">Select Category</option>
+                        <option value="Business">Business</option>
+                        <option value="IT">IT</option>
+                        <option value="Engineering and Construction">Engineering and Construction</option>
+                        <option value="Language">Language</option>
+                    </select>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex align-items-center justify-content-end">
+                    <span class="btn btn-sm btn-light mx-3 close">Cancel</span>
+                    <span class="btn btn-sm btn-danger deleteBtn">Delete</span>
                 </div>
             </div>
         </div>
@@ -80,15 +110,21 @@
                         <label for="course_title" class="col-sm-3 col-form-label">Course Category</label>
                         <div class="col-sm-9">
                             <select class="form-control" id="course_title" required>
-                                <option  disabled="disabled" selected="selected">Select Category</option>
-                                <option value="1">Business</option>
-                                <option value="2">IT</option>
-                                <option value="3">Engineering and Construction</option>
-                                <option value="4">Language</option>
+                                <option  disabled="disabled" selected="selected"  value="Select Category">Select Category</option>
+                                <option value="Business">Business</option>
+                                <option value="IT">IT</option>
+                                <option value="Engineering and Construction">Engineering and Construction</option>
+                                <option value="Language">Language</option>
                             </select>
-                            <div class="add-new-cat bg-white d-flex justify-content-between align-items-center py-1 px-3 rounded mt-2 w-50">
-                                <span class="text-success fw-normal">Add New Category</span>
-                                <a href="#" class="" id="add_new_category"><i class="fa-solid fa-plus text-dark"></i></a>
+                            <div class="d-flex justify-content-around flex-wrap">
+                                <div class="add-new-cat bg-white d-flex justify-content-between align-items-center py-1 px-3 rounded mt-2" style="width: 200px;">
+                                    <span class="text-success fw-normal">Add New Category</span>
+                                    <a href="#" class="" id="add_new_category"><i class="fa-solid fa-plus text-dark"></i></a>
+                                </div>
+                                <div class="delete-new-cat bg-white d-flex justify-content-between align-items-center py-1 px-3 rounded mt-2" style="width: 200px;">
+                                    <span class="text-danger fw-normal">Delete Category</span>
+                                    <a href="#" class="" id="delete_category"><i class="fa-solid fa-trash-can text-danger"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>

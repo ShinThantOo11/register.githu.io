@@ -32,7 +32,7 @@
     border: 2px solid white;
 }
 
-.add-category{
+.add-category, .delete-category{
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -40,11 +40,11 @@
     z-index: 55000;
 }
 
-.add-category .box{
+.add-category .add-box, .delete-category .delete-box{
     width: 50%;
 }
 
-.add-category.ani{
+.add-category.ani, .delete-category.ani{
     animation: fadeIn 0.3s ease-in both;
 }
 
