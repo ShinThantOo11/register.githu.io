@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.registration{
+    margin: 0 20px;
+}
 .course-registration{
     padding-top: 20px;
 }
@@ -59,4 +62,11 @@
 	}
 }
 
-
+@media (max-width : 600px) {
+    .add-category .add-box, .delete-category .delete-box{
+        width: 80%  !important;
+    }
+    .add-new-cat, .delete-new-cat{
+        width: 350px !important;
+    }
+}
